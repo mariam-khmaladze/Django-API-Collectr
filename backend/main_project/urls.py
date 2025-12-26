@@ -1,4 +1,4 @@
-"""collectr_project URL Configuration
+"""main_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -22,8 +22,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/auth/', include('users.urls')),
-    path('', include('collectr_app.urls')),
+    path('api/auth/', include('users_module.urls')),
+    path('', include('collections_module.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 rest_url = path('api-auth/', include('rest_framework.urls'))

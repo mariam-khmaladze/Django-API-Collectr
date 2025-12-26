@@ -25,7 +25,7 @@
 					"--nothreading",
 					"--noreload"
 				],
-				"file": "backend\\manage.py"
+				"file": "backend/manage.py"
 			}
 		}
 	]
